@@ -1,103 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 <div class="container">
-
-<div class="jumbotron">
-   <span class="glyphicon glyphicon-globe"> </span> New York Times Search
-</div>
-
-
-
+    <div class="jumbotron">
+        <span class="glyphicon glyphicon-globe"> </span> New York Times Search
+    </div>
     <div class="row search">
         <div class="panel panel-default">
-Search Parameters:
-
+            Search Parameters:
             <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1">
-
-
-                <div class="form-group">
-                    <select class="form-control" id="numberRecord">
-                        <option value ="1">1 </option>
-                        <option value ="5">5</option>
-                        <option value ="10">10</option>
-                        </select>
-
-                </div><!-- /input-group -->
-
-
+            <div class="form-group">
+                //attach listener event
+                <select class="form-control" id="numberRecord">
+                    <option value="1">1 </option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <!-- /input-group -->
             <input type="text" class="form-control" placeholder="Start Year (optional)" aria-describedby="basic-addon1">
-
             <input type="text" class="form-control" placeholder="End Year (optional)" aria-describedby="basic-addon1">
-
-
             <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">Search</button>
-                <button type="button" class="btn btn-default">Clear Results</button>
 
-        </div>
+
+                <button type="button" class="btn btn-default" id="search">Search</button>
+                <button type="button" class="btn btn-default" id="clear">Clear Results</button>
+
+
+            </div>
         </div>
     </div>
-            <div class="row returnResults">
-                <div class="panel panel-default">
-                    Search Results </div></div>
-
-<div class = "row ">
-    <div class=" panel panel-default">
-
-    <div class="well" id ="">
-       <h1> title:  headline</h1>
-        <h3>author: byline.original</h3>
-        <h3>section: keywords.section_name</h3>
-        <h3> date: pub_date</h3>
-        <a href=""> Link to website</a>
+    <div class="row returnResults">
+        <div class=" panel panel-default">
+            Search Results
+            <div class="well" id="wellInfo">
+                <h1> title:  headline</h1>
+                <h3>author: byline.original</h3>
+                <h3>section: keywords.section_name</h3>
+                <h3> date: pub_date</h3>
+                <a href=""> Link to website</a>
+            </div>
+        </div>
     </div>
-
-
 </div>
-
-</div>
-
-
-
-
-
-
-
-
-</div>
+<script>
+</script>
 </body>
-</html>
 
+</html>
 <style>
-    .jumbotron{
-        font-size:xx-large;
+    .jumbotron {
+        font-size: xx-large;
         text-align: center;
         font-family: "American Typewriter";
-
-
     }
 
-    .search{
+    .search {}
 
-
-
-    }
-
-    .returnResults
-
-
-    }
-
-
-
-
-
-
+    .returnResults {}
 </style>
