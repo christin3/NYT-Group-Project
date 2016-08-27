@@ -11,19 +11,60 @@
 
 <div class="jumbotron">
    <span class="glyphicon glyphicon-globe"> </span> New York Times Search
-
 </div>
+
+
 
     <div class="row search">
         <div class="panel panel-default">
-            Search Para</div></div>
-            <div class="row articles">
-                <div class="panel panel-default">
-                    Top Articles</div></div>
+Search Parameters:
+
+            <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1">
 
 
+                <div class="form-group">
+                    <select class="form-control" id="numberRecord">
+                        <option value ="1">1 </option>
+                        <option value ="5">5</option>
+                        <option value ="10">10</option>
+                        </select>
+
+                </div><!-- /input-group -->
+
+
+            <input type="text" class="form-control" placeholder="Start Year (optional)" aria-describedby="basic-addon1">
+
+            <input type="text" class="form-control" placeholder="End Year (optional)" aria-describedby="basic-addon1">
+
+
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">Search</button>
+                <button type="button" class="btn btn-default">Clear Results</button>
 
         </div>
+        </div>
+    </div>
+            <div class="row returnResults">
+                <div class="panel panel-default">
+                    Search Results </div></div>
+
+<div class = "row ">
+    <div class=" panel panel-default">
+
+    <div class="well" id ="">
+       <h1> title:  headline</h1>
+        <h3>author: byline.original</h3>
+        <h3>section: keywords.section_name</h3>
+        <h3> date: pub_date</h3>
+        <a href=""> Link to website</a>
+    </div>
+
+
+</div>
+
+</div>
+
+
 
 
 
@@ -37,7 +78,9 @@
 <style>
     .jumbotron{
         font-size:xx-large;
-        
+        text-align: center;
+        font-family: "American Typewriter";
+
 
     }
 
@@ -47,8 +90,7 @@
 
     }
 
-    .articles{
-
+    .returnResults
 
 
     }
